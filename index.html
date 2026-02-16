@@ -3,42 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karabo's Portfolio</title>
+    <title>My Portfolio</title>
+    <style>
+        /* YOUR CSS GOES HERE */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+        }
+
+        #main-header{
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+
+        h2{
+            color: rgb(246, 86, 6);
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+
+        nav li{
+            padding: 15px;
+        }
+
+        .card{
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        a{
+            color: lightcoral
+        }
+
+        footer{
+            background-color: bisque;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Karabo's Portfolio</h1>
+<body >
+    <header id="main-header">
+        <h1>Karabo Machimana</h1>
+        <p>Student ID: 2809967</p>
     </header>
 
     <nav>
         <ul>
-            <li>
-                <a href="#"> Home  </a>
-            </li>
-            <li>
-                <a href="#"> Projects </a> 
-            </li>
-            <li>
-                 <a href="#"> address </a>
-            </li>            
-            <li>
-                <a href="#"> Contact </a> 
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am a third-year Computer Science student at the University of the Witwatersrand (Wits). My academic journey has equipped me with a solid foundation in programming, data structures, and software design. I am passionate about developing efficient, well-structured solutions and continuously improving my technical skills through hands-on projects. I am so happy to be doing Software Design as a module this year as I have been looking forward to further my web development skills</p>
-    </section>
+    <main>
+        <section class="card" id="about">
+            <h2>About Me</h2>
+            <p>I am a third-year Computer Science student at the University of the Witwatersrand (Wits). My academic journey has equipped me with a solid foundation in programming, data structures, and software design. I am passionate about developing efficient, well-structured solutions and continuously improving my technical skills through hands-on projects. I am so happy to be doing Software Design as a module this year as I have been looking forward to further my web development skills</p>
+        </section>
 
-    <article>
-        <h3>Latest Project</h3>
-        <p>My latest project is an app called "Lend A Hand" which is basically a platform for helping those around you by donating stuff and also get stuff that you need of if someone had donated. It is a really life problem solving projects cause it helps a lot of communities</p>
-    </article>
+        <article class="card" id="projects">
+            <h2>Latest Project</h2>
+            <p>My latest project is an app called "Lend A Hand" which is basically a platform for helping those around you by donating stuff and also get stuff that you need of if someone had donated. It is a really life problem solving projects cause it helps a lot of communities. There's also a few projects heading my way, I should share those once I'm done with them.</p>
+        </article>
+    </main>
 
     <footer>
-        &#169 2026 2809967 | Built with Semantic HTML
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
